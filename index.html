@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+	<h1>Temperature Converter</h1>
+	<h2>Convert between Fahrenheit, Celsius and Kelvin.</h2>
+	<hr>
+	<h2>Instructions:</h2>
+	<p>Enter a value of degrees into one of the input fields and the other scales will be updated automatically.</p>
+	<hr>
+</header>
+
+<main>
+
+<div>
+	<h3>Fahrenheit</h3>
+	<input id="tempF" type="number" value="0" min="-459.67" onchange="getVal(this)"/>
+</div>
+
+<div>
+	<h3>Celsius</h3>
+	<input id="tempC" type="number" value="0" min="-273.15" onchange="getVal(this)"/>
+</div>
+
+<div>
+	<h3>Kelvin</h3>
+	<input id="tempK" type="number" value="0" min="0" onchange="getVal(this)"/>
+</div>
+
+</main>
+
+<footer>
+	<p>Contact me via <a href="https://github.com/dmozzoni">GitHub</a>.</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
